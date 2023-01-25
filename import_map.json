@@ -1,0 +1,11 @@
+{
+    "imports": {
+        "typeorm": "npm:typeorm@0.3.11",
+        "better-sqlite3": "npm:better-sqlite3@8.0.1",
+        "sqlite3": "npm:sqlite3@5.1.4",
+        "std/": "https://deno.land/std@0.173.0/",
+        "oak/": "https://deno.land/x/oak@v11.1.0/",
+        "jose/": "https://deno.land/x/jose@v4.11.2/",
+        "src/": "./src/"
+    }
+}

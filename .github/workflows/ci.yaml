@@ -1,0 +1,14 @@
+name: CI
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: [self-hosted, linux]
+    steps:
+      - name: Setup Deno environment
+        uses: denolib/setup-deno@v2.3.0
+        with:
+          deno-version: ^1.29
+      - run: deno fmt --check
+      - run: deno lint --unstable
